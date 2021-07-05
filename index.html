@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel=stylesheet href="styles.css"/>
+</head>
+<body>
+  <div>
+      <table>
+        <tr>
+          <td id="formulaScreen" colspan="4">&nbsp</td>
+        </tr>
+        <tr>
+          <td id="resultScreen" colspan="4">&nbsp</td>
+        </tr>
+        <tr>      
+          <td colspan="2" id='clear' onclick="clearAll()">AC</td> 
+          <td colspan="2" onclick="deleteLastChar()">DEL</td>           
+        </tr>
+        <tr>
+          <td data-number id='7' onclick="writeFormula('7')">7</td>
+          <td data-number id='8' onclick="writeFormula('8')">8</td>
+          <td data-number id='9' onclick="writeFormula('9')">9</td>
+          <td data-operation id='*' onclick="writeFormula('*')" >&times;</td>
+        </tr>
+
+        <tr>
+          <td data-number id='4' onclick="writeFormula('4')" >4</td>
+          <td data-number id='5' onclick="writeFormula('5')" >5</td>
+          <td data-number id='6' onclick="writeFormula('6')" >6</td>
+          <td data-operation id='/' onclick="writeFormula('/')" >&divide;</td>         
+        </tr>
+
+        <tr>
+          <td data-number id='1' onclick="writeFormula('1')">1</td>
+          <td data-number id='2' onclick="writeFormula('2')">2</td>
+          <td data-number id='3' onclick="writeFormula('3')">3</td>
+          <td data-operation id='-' onclick="writeFormula('-')">&minus;</td>  
+        </tr>
+
+        <tr>
+          <td data-number id='0' onclick="writeFormula(0)">0</td>
+          <td data-point id='.' onclick="writeFormula('.')" >.</td>
+          <td data-operation id='+' onclick="writeFormula('+')" >&plus;</td>    
+          <td  id='equalSign' onclick="calculate()" >&#61</td>
+        </tr>
+
+        </table>
+
+  </div>
+    
+  <Script src="script.js"></Script>  
+</body>
+</html>

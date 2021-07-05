@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+* {
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+
+body {
+    background-color: rgb(33, 187, 154);
+    padding: 0;
+    margin: 0;
+  }
+
+table{
+    background-color: grey;
+    width: 50%;
+    text-align: center;
+}
+td{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 0.1rem;
+    column-width: 3rem;
+    text-align: center;
+}
+#resultScreen{
+   background-color: rgb(25, 30, 49);
+   color: ivory;
+   column-width:inherit;
+   word-wrap: break-word;
+   word-break: break-all;
+   font-family: 'Orbitron', sans-serif;
+}
+#formulaScreen{
+    background-color: rgb(25, 30, 49);
+    color: ivory;
+    content:'jjjjj';
+    column-width:inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: Orbitron, sans-serif;
+ }
+
+#equalSign{
+    background-color: orange;
+}
